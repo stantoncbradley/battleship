@@ -1,3 +1,5 @@
+require_relative 'coordinate'
+
 class Coordinate
 
   attr_reader :x,:y,:hit,:name

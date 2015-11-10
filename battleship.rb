@@ -1,3 +1,6 @@
+require_relative 'grid'
+require_relative 'ship'
+
 class Battleship
 
   attr_reader :grid, :ships
@@ -18,10 +21,10 @@ class Battleship
     if ship_name
       ship = @ships.find{ |s|s.name == ship_name }
       if ship.did_sink?
-        puts "#{ship} sunk!"
+        puts "#{ship.name} sunk!"
         status = :sunk
       else
-        puts "#{ship} hit!"
+        puts "#{ship.name} hit!"
         status = :hit
       end
       game_over = true

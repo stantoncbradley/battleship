@@ -1,3 +1,5 @@
+require_relative 'coordinate'
+
 class Grid
   def initialize(width, length)
     @coordinates = Array.new(width)
