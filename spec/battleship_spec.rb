@@ -1,6 +1,6 @@
 require_relative '../battleship'
 
-RSpec.describe Battleship do
+describe Battleship do
 
   before @each do
     @bs = Battleship.new(10,10)
