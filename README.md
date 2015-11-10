@@ -11,7 +11,6 @@ Add ships:
 <br>
 ```game.add_ship(ship_name,initial_coordinate,ship_length,orientation(:h or :v))```
 <br><br>
-Fire!:
+Fire:
 ```game.fire(x_coordinate,y_coordinate)```
-<br>
 Returns ```:miss,:hit,:sunk,``` and ```:game_over```
